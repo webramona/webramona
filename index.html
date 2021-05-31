@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link  rel="icon"   href="img/favicon-ramona.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ramona</title>
+</head>
+<body>
+  <header class="cd-auto-hide-header">
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo" width="100px"></a></div>
+  
+    <nav class="cd-primary-nav">
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+          Menu
+        </span>
+      </a> <!-- .nav-trigger -->
+  
+      <ul id="cd-navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="mimusica.html">Mi música</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="Galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
+    <div id="contenedor">
+        <div>
+
+           <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <img src="img/La-Ramona-1.jpg" alt="La-Ramona-1"></div>
+        <div class="swiper-slide"> <img src="img/La-Ramona-2.jpg" alt="La-Ramona-2"></div>
+        <div class="swiper-slide"> <img src="img/La-Ramona-3.jpg" alt="La-Ramona-3"></div>
+        <div class="swiper-slide"> <img src="img/La-Ramona-4.jpg" alt="La-Ramona-4"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--JS slider-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+                <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+    </div>
+
+    </div> 
+</div>
+
+  <div class="titulo_inicio">
+    <H1 class="quien">¿Quién es</H1>
+    <p class="LR">La Ramona?</p>
+    <hr>
+      <P class="texto_inicio">La Ramona es un proyecto de solista no solo es una mujer con carácter que habla claro y duro sobre lo
+        que nos pasa sino que también es una voz intuitiva, sensual, femenina está rota, se está reconstruyendo,
+        tiene grietas es humana, es un espejo le hace falta ver más la escena colombiana del rock todo este
+        reunido en un solo proyecto. Ha conquistado varios escenarios musicales, ha podido llegar a una gran
+        cantidad de público.
+        </P>
+    <hr>
+  </div>
+      <!--carousel videos-->
+      <div class="inicio_videos">
+        <div class="info_inicio_videos">
+          <p>Vídeos</p>
+          <a href="videos.html" target="_blank">  Ver más</a>
+        </div>
+        <div class="carousel_videos">
+            <div class="video1">
+              <iframe width="280" height="160" src="https://www.youtube.com/embed/Hhi5IpBCnAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video1">
+              <iframe width="280" height="160" src="https://www.youtube.com/embed/Ln6Sb-9hrFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video1">
+              <iframe width="280" height="160" src="https://www.youtube.com/embed/kB2pFwToKnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      <div class="ver_mas">
+        <a class="ver_mas2" href="videos.html" target="_blank">  Ver más</a>
+      </div>
+
+      <!--carousel galeria-->
+  <div class="inicio_galeria">
+    <div class="info_inicio_galeria">
+      <p>Galería</p>
+      <a href="Galeria.html" target="_blank">  Ver más</a>
+    </div>
+    <div class="carousel_galeria">
+      <div class="carousel">
+        <div class="carousel__contenedor">
+        <button aria-label="anterior" class="carousel__anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carousel__lista">
+          <div class="carousel__elemento">
+            <img id="img" src="img/G_i1.jpg" alt="la ramona foto">
+          </div>
+          <div class="carouesel__elemento">
+            <img id="img" src="img/G_i2.jpg" alt="la ramona foto">
+          </div>
+          <div class="carousel__elemento">
+            <img id="img" src="img/G_i3.jpg" alt="la ramona foto">
+          </div>
+          <div class="carousel__elemento">
+            <img id="img" src="img/G_i4.jpg" alt="la ramona foto">
+          </div>
+          <div class="carousel__elemento">
+            <img id="img" src="img/G_i5.jpg" alt="la ramona foto">
+          </div>
+          <div class="carousel__elemento">
+            <img id="img" src="img/G_i6.jpg" alt="la ramona foto">
+          </div>
+          <div class="carousel__elemento">
+            <img id="img" src="img/G_i7.jpg" alt="la ramona foto">
+          </div>
+        </div>
+        <button aria-label="siguiente" class="carousel__siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      </div>
+      <div role="tablist" clas="carousel__indicadores">
+      </div>
+    </div>
+
+  </div>
+
+    <div class="ver_mas">
+      <a class="ver_mas2" href="videos.html" target="_blank">  Ver más</a>
+    </div>
+
+      <!--footer-->
+  <div class="footer">
+    <div class="info_footer">
+      <ul>
+        <li><a class="a" href="#">Contacto</a></li>
+        <li><a class="a" href="#">Contratos</a></li>
+        <li><a class="a" href="#">Politicas de prívacidad</a></li>
+        <li><a class="a" href="#">condiciones de uso</a></li>
+      </ul>
+    </div>
+    <div class="info_footer">
+      <p class="suscribete">Suscríbete</p>
+      <div class="correo">
+      <input type="text" placeholder="correo electronico" required>
+      </div>
+        <a id="enviar" href="#">  Enviar</a>
+    </div>
+    <div class="info_footer">
+      <p>Sígueme</p>
+      <div class="caja_ico">
+        <div class="iconos">
+          <a href="https://open.spotify.com/artist/6iWNuXAKgG1vQee6aWmTEW?si=Sy5KwIY9Q42LQyTEk__KjQ&nd=1" target="_blank"> <i id="iconos_footer" class="fab fa-spotify"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://www.instagram.com/laramonamusic/" target="_blank"> <i id="iconos_footer" class="fab fa-instagram"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://www.facebook.com/laramonamusic/?ref=page_internal" target="_blank"> <i id="iconos_footer" class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://www.youtube.com/user/laramona2013" target="_blank"> <i id="iconos_footer" class="fab fa-youtube"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://twitter.com/laramonamusic?lang=es" target="_blank"> <i id="iconos_footer" class="fab fa-twitter"></i></a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer_footer">
+    <img  id="logo_footer" src="img/logo.png" alt="logo" width="50px"> La Ramona 2021</div>
+  
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="js/app.js"></script>
+<script src="js/popup.js"></script>
+</html>

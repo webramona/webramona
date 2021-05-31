@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/reproductor.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link  rel="icon"   href="img/favicon-ramona.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Música</title>
+</head>
+<body>
+  <header class="cd-auto-hide-header">
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo" width="100px"></a></div>
+  
+    <nav class="cd-primary-nav">
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+          Menu
+        </span>
+      </a> <!-- .nav-trigger -->
+  
+      <ul id="cd-navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="mimusica.html">Mi música</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="Galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
+    <div id="contenedor">
+        <div class="titulo_musica">Mi música</div>
+		
+		<div>
+			<div class="caratula_musica">
+				<img src="img/la-ramona-caratula.png" class="imagen-caratula" alt="caratula_musica" width="300" height="300">
+			</div>
+			<div class="nueva_cancion">
+				Nueva canción
+			</div>
+			<div class="nombre_musica">
+				El Ojo de la tormenta
+			</div>
+
+			<!-- Reproductor de musica -->
+			<div class="reproductor_musica"> 
+				<div id="app-cover">
+          <!-- <div id="bg-artwork"></div> -->
+          <!-- <div id="bg-layer"></div> -->
+          <div id="player">
+              <div id="player-track">
+                  <div id="album-name"></div>
+                  <div id="track-name"></div>
+                  <div id="track-time">
+                      <div id="current-time"></div>
+                      <div id="track-length"></div>
+                  </div>
+                  <div id="s-area">
+                      <div id="ins-time"></div>
+                      <div id="s-hover"></div>
+                      <div id="seek-bar"></div>
+                  </div>
+              </div>
+              <div id="player-content">
+                  <div id="album-art">
+                      <img src="img/ElOjoDeLaTormenta.png" class="active" id="_1">
+                      <img src="img/LoQueNadiePudo.png" id="_2">
+                      <div id="buffer-box">Cargando...</div>
+                  </div>
+                  <div id="player-controls">
+                      <div class="control">
+                          <div class="button play-previous" id="play-previous">
+                              <i class="fas fa-backward" style="color: #BE246D;"></i>
+                          </div>
+                      </div>
+                      <div class="control">
+                          <div class="button play-pause-button" id="play-pause-button">
+                              <i class="fas fa-play" style="color: #BE246D;"></i>
+                          </div>
+                      </div>
+                      <div class="control">
+                          <div class="button play-next" id="play-next">
+                              <i class="fas fa-forward" style="color: #BE246D;"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+			</div>
+      <!-- Fin del reproductor de musica -->
+		</div>
+		
+		<div>
+			<div class="">
+				<div class="titulo_lanzamientos">Nuevos lanzamientos</div>
+				<hr size="6px" color="#BE246D">
+				<div class="lista_lanzamientos">
+          <!-- tema 1 -->
+					<div id="lista_populares_lanzamientos" class="flex_row" style="margin: 18px 0px 18px 1em;">
+            <div class="flex_row" style="width: 80%;">
+              <div class="lista" style="margin-right: 1em;">
+                <img src="img/tema1.jpeg" class="imagen-caratula" alt="caratula_musica" width="90" height="90">
+              </div>
+              <div class="lista" style="">
+                <p style="color: #fff;">Lo que nadie pudo <br> La Ramona</p>
+              </div>
+            </div>
+            <div class="lista iconos_lanzamientos iconoplus1" style="width: 8%; font-size: 1.5em;">
+              <a href="https://open.spotify.com/track/1BqFXniWiIdeE0M363ixiW?si=b803867faa3845e3" target="_blank" style="color: #fff;"> 
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div class="lista iconos_lanzamientos iconostar1" style="width: 8%; font-size: 2em;">
+              <i class="fas fa-star"></i>
+            </div>
+					</div>
+
+          <!-- tema 2 -->
+					<div id="lista_populares_lanzamientos" class="flex_row" style="margin: 18px 0px 18px 1em;">
+            <div class="flex_row" style="width: 80%;">
+              <div class="lista" style="margin-right: 1em;">
+                <img src="img/tema2.jpeg" class="imagen-caratula" alt="caratula_musica" width="90" height="90">
+              </div>
+              <div class="lista" style="">
+                <p style="color: #fff;">Boicot <br> La ramona</p>
+              </div>
+            </div>
+            <div class="lista iconos_lanzamientos iconoplus2" style="width: 8%; font-size: 1.5em;">
+              <a href="https://open.spotify.com/track/5bBOmouAOwzoqbdbvbyfUM?si=be1b708d1e034011" target="_blank" style="color: #fff;"> 
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div class="lista iconos_lanzamientos iconostar2" style="width: 8%; font-size: 2em;">
+              <i class="fas fa-star"></i>
+            </div>
+					</div>
+
+          <!-- tema 3 -->
+					<div id="lista_populares_lanzamientos" class="flex_row" style="margin: 18px 0px 18px 1em;">
+            <div class="flex_row" style="width: 80%;">
+              <div class="lista" style="margin-right: 1em;">
+                <img src="img/tema3.jpeg" class="imagen-caratula" alt="caratula_musica" width="90" height="90">
+              </div>
+              <div class="lista" style="">
+                <p style="color: #fff;">Cherokee <br> La Ramona</p>
+              </div>
+            </div>
+            <div class="lista iconos_lanzamientos iconoplus3" style="width: 8%; font-size: 1.5em;">
+              <a href="https://open.spotify.com/track/3qY0oKFlzTYfPoXS9cnn8z?si=ac74a18813884c3b" target="_blank" style="color: #fff;"> 
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div class="lista iconos_lanzamientos iconostar3" style="width: 8%; font-size: 2em;">
+              <i class="fas fa-star"></i>
+            </div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="">
+				<div class="titulo_populares">Populares</div>
+				<hr size="6px" color="#BE246D">
+        <div class="lista_populares">
+          <!-- tema 4 -->
+					<div id="lista_populares_lanzamientos" class="flex_row" style="margin: 18px 0px 18px 1em;">
+            <div class="flex_row" style="width: 80%;">
+              <div class="lista" style="margin-right: 1em;">
+                <img src="img/tema4.jpeg" class="imagen-caratula" alt="caratula_musica" width="90" height="90">
+              </div>
+              <div class="lista" style="">
+                <p style="color: #fff;">El ojo de la tormenta <br> La Ramona</p>
+              </div>
+            </div>
+            <div class="lista iconos_lanzamientos iconoplus4" style="width: 8%; font-size: 1.5em;">
+              <a href="https://open.spotify.com/album/6Ft5aodCn6TrcUIVyrO5ya" target="_blank" style="color: #fff;"> 
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div class="lista iconos_lanzamientos iconostar4" style="width: 8%; font-size: 2em;">
+              <i class="fas fa-star"></i>
+            </div>
+					</div>
+          <!-- tema 5 -->
+					<div id="lista_populares_lanzamientos" class="flex_row" style="margin: 18px 0px 18px 1em;">
+            <div class="flex_row" style="width: 80%;">
+              <div class="lista" style="margin-right: 1em;">
+                <img src="img/tema5.jpeg" class="imagen-caratula" alt="caratula_musica" width="90" height="90">
+              </div>
+              <div class="lista" style="">
+                <p style="color: #fff;">Brío <br> La ramona</p>
+              </div>
+            </div>
+            <div class="lista iconos_lanzamientos iconoplus5" style="width: 8%; font-size: 1.5em;">
+              <a href="https://open.spotify.com/track/5BoA6gJzAUfa57JQ0WBt4t?si=7d3fa1f96c6548f5" target="_blank" style="color: #fff;"> 
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div class="lista iconos_lanzamientos iconostar5" style="width: 8%; font-size: 2em;">
+              <i class="fas fa-star"></i>
+            </div>
+					</div>
+          <!-- tema 6 -->
+					<div id="lista_populares_lanzamientos" class="flex_row" style="margin: 18px 0px 18px 1em;">
+            <div class="flex_row" style="width: 80%;">
+              <div class="lista" style="margin-right: 1em;">
+                <img src="img/tema6.jpeg" class="imagen-caratula" alt="caratula_musica" width="90" height="90">
+              </div>
+              <div class="lista" style="">
+                <p style="color: #fff;">Biutiful <br> La Ramona</p>
+              </div>
+            </div>
+            <div class="lista iconos_lanzamientos iconoplus6" style="width: 8%; font-size: 1.5em;">
+              <a href="https://open.spotify.com/track/4MkYxxx9s3QxRXASc9ZXen?si=803a71c52fe44ca4" target="_blank" style="color: #fff;"> 
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div class="lista iconos_lanzamientos iconostar6" style="width: 8%; font-size: 2em;">
+              <i class="fas fa-star"></i>
+            </div>
+					</div>
+          
+        </div>
+			</div>
+		</div>		
+	</div>
+          
+
+          
+
+  <div class="conoce_mas_videos">
+		<p>Conoce más&nbsp;&nbsp;</p>
+		<p class="visitame1">Visita mi canal de Spotify</p>
+		<div class="icono_videos">
+		  <a href="https://open.spotify.com/artist/6iWNuXAKgG1vQee6aWmTEW?si=Sy5KwIY9Q42LQyTEk__KjQ&nd=1" target="_blank"> 
+        <i id="iconos_footer" class="fab fa-spotify" style="margin-left: 10px;"></i>
+      </a>
+		</div>
+</div>
+	<!--footer-->
+  <div class="footer">
+    <div class="info_footer">
+      <ul>
+        <li><a class="a" href="#">Contacto</a></li>
+        <li><a class="a" href="#">Contratos</a></li>
+        <li><a class="a" href="#">Politicas de prívacidad</a></li>
+        <li><a class="a" href="#">condiciones de uso</a></li>
+      </ul>
+    </div>
+    <div class="info_footer">
+      <p class="suscribete">Suscríbete</p>
+      <div class="correo">
+      <input type="text" placeholder="correo electronico" required>
+      </div>
+        <a id="enviar" href="#" target="_blank">  Enviar</a>
+    </div>
+    <div class="info_footer">
+      <p>Sígueme</p>
+      <div class="caja_ico">
+        <div class="iconos">
+          <a href="https://open.spotify.com/artist/6iWNuXAKgG1vQee6aWmTEW?si=Sy5KwIY9Q42LQyTEk__KjQ&nd=1" target="_blank"> <i id="iconos_footer" class="fab fa-spotify"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://www.instagram.com/laramonamusic/" target="_blank"><i id="iconos_footer" class="fab fa-instagram"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://www.facebook.com/laramonamusic/?ref=page_internal" target="_blank"> <i id="iconos_footer" class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://www.youtube.com/user/laramona2013" target="_blank"> <i id="iconos_footer" class="fab fa-youtube"></i></a>
+        </div>
+        <div class="iconos">
+          <a href="https://twitter.com/laramonamusic?lang=es" target="_blank"> <i id="iconos_footer" class="fab fa-twitter"></i></a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer_footer">
+    <img  id="logo_footer" src="img/logo.png" alt="logo" width="50px"> La Ramona 2021</div>
+
+
+                <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<!--js-->
+<script src="js/lightbox.js"></script>
+<script src="js/reproductor.js"></script>
+
+<script>
+  $(".iconostar1").click(function(){
+    $(this).toggleClass("color1 color2");
+  });
+  $(".iconostar2").click(function(){
+    $(this).toggleClass("color1 color2");
+  });
+  $(".iconostar3").click(function(){
+    $(this).toggleClass("color1 color2");
+  });
+  $(".iconostar4").click(function(){
+    $(this).toggleClass("color1 color2");
+  });
+  $(".iconostar5").click(function(){
+    $(this).toggleClass("color1 color2");
+  });
+  $(".iconostar6").click(function(){
+    $(this).toggleClass("color1 color2");
+  });
+</script>
+
+    </div> 
+</div>
+</body>
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+</html>
